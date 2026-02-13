@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>San Valentín 2025</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+
+
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    color:#5a0033;
+    text-align:center;
+    min-height:100vh;
+    background: linear-gradient(-45deg, #ffd6eb, #ff9ecf, #ff6fb5, #ffc1dd);
+    background-size:400% 400%;
+    animation: fondoAnimado 15s ease infinite;
+}
+
+@keyframes fondoAnimado{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+
+h1{
+    font-family:'Cinzel', serif;
+    font-size:40px;
+    margin-top:70px;
+    letter-spacing:2px;
+    color:#7a0045;
+}
+
+h2{
+    font-weight:400;
+}
+
+
+button{
+    padding:14px 35px;
+    font-size:16px;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    margin:15px;
+    transition:0.3s ease;
+    font-weight:500;
+}
+
+.si{
+    background:#ff2f92;
+    color:white;
+}
+
+.no{
+    background:#fff0f6;
+    color:#99004d;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+button:disabled{
+    background:#ffc1dd;
+    cursor:not-allowed;
+}
+
+#mensajeNo{
+    display:none;
+    font-size:65px;
+    font-family:'Cinzel', serif;
+    margin-top:150px;
+    color:#a00050;
+}
+
+
+#sorpresas{
+    display:none;
+    margin-top:60px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:30px;
+    width:85%;
+    margin:40px auto;
+}
+
+.card{
+    background:rgba(255,255,255,0.75);
+    padding:25px;
+    border-radius:25px;
+    transition:0.4s;
+    position:relative;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    margin:10px 0;
+}
+
+.fecha{
+    font-size:13px;
+    margin-bottom:10px;
+    color:#a00050;
+}
+
+.contenido{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.5s ease;
+    margin-top:10px;
+    text-align:left;
+}
+
+.card.activa .contenido{
+    max-height:300px;
+}
+
+.tituloInterno{
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.abrir{
+    margin-top:10px;
+    background:#ff4da6;
+    color:white;
+    border-radius:20px;
+    padding:8px 20px;
+    font-size:14px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>SAN VALENTIN 2025 PARA MI AMORCITO XIXI</h1>
+<h2>Te quiero mi amor 💖</h2>
+
+<div id="principal">
+    <h2>¿Quieres ser mi San Valentín?</h2>
+    <button class="si" onclick="mostrarSorpresas()">Si</button>
+    <button class="no" onclick="respuestaNo()">No ☹</button>
+</div>
+
+<div id="mensajeNo">poque amorchito</div>
+
+<div id="sorpresas">
+<div class="grid">
+
+<!-- SORPRESA 1 -->
+<div class="card" data-fecha="2025-02-14">
+    <h3>Sorpresa #1</h3>
+    <div class="fecha">Disponible el 14 de febrero</div>
+    <button class="abrir">Abrir</button>
+    <div class="contenido">
+        <div class="tituloInterno">Cita Romántica</div>
+        Cena especial en un sitio que tu quieras, o lo puedo elegir yo si quieres, pero una noche romantica para los dos bien arregladitos y bonitos y cenar bien rico.
+    </div>
+</div>
+
+<!-- SORPRESA 2 -->
+<div class="card" data-fecha="2025-02-14">
+    <h3>Sorpresa #2</h3>
+    <div class="fecha">Disponible el 14 de febrero</div>
+    <button class="abrir">Abrir</button>
+    <div class="contenido">
+        <div class="tituloInterno">Dia de sorpresa</div>
+        Dia sorpresa donde te llevaré a varios sitios a hacer cosas que te gustan y nos gustan a los dos y poder pasarlo bien juntitos.
+    </div>
+</div>
+
+<!-- SORPRESA 3 -->
+<div class="card" data-fecha="2025-02-18">
+    <h3>Sorpresa #3</h3>
+    <div class="fecha">Disponible el 18 de febrero</div>
+    <button class="abrir">Abrir</button>
+    <div class="contenido">
+        <div class="tituloInterno">Un dia de shopping</div>
+        Un dia completo de shopping, donde tu quieras y lo que quieras, con tu amorcito pagando las cositas guays que veas.
+    </div>
+</div>
+
+<!-- SORPRESA 4 -->
+<div class="card" data-fecha="2025-02-20">
+    <h3>Sorpresa #4</h3>
+    <div class="fecha">Disponible el 20 de febrero</div>
+    <button class="abrir">Abrir</button>
+    <div class="contenido">
+        <div class="tituloInterno">Plan Sorpresa</div>
+        Un plan completamente sorpresa que espero que te guste mucho, solo tienes que decir dia.
+    </div>
+</div>
+
+<!-- SORPRESA 5 -->
+<div class="card" data-fecha="2025-02-22">
+    <h3>Sorpresa #5</h3>
+    <div class="fecha">Disponible el 22 de febrero</div>
+    <button class="abrir">Abrir</button>
+    <div class="contenido">
+        <div class="tituloInterno">Última Sorpresa</div>
+        Algo que aun no puedo decirte pero espero que te guste mucho mucho mucho mi vida.
+    </div>
+</div>
+<!-- SORPRESA 6 -->
+<div class="card" data-fecha="2025-02-24">
+    <h3>Sorpresa #6</h3>
+    <div class="fecha">Disponible el 24 de febrero</div>
+    <button class="abrir">Abrir</button>
+    <div class="contenido">
+        <div class="tituloInterno">Escapadita un finde a un hotel guay en un sitio guay los dos juntos solitos</div>
+        Un finde completito juntitos en un hotel guay para estar solitos a gusto disfrutando el uno del otro.
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<script>
+
+function mostrarSorpresas(){
+    document.getElementById("principal").style.display="none";
+    document.getElementById("sorpresas").style.display="block";
+}
+
+function respuestaNo(){
+    document.getElementById("principal").style.display="none";
+    document.getElementById("sorpresas").style.display="none";
+    document.getElementById("mensajeNo").style.display="block";
+}
+
+/* CONTROL DE FECHAS */
+let hoy = new Date();
+
+document.querySelectorAll(".card").forEach(card=>{
+    let fechaDisponible = new Date(card.dataset.fecha);
+    let boton = card.querySelector(".abrir");
+
+    if(hoy < fechaDisponible){
+        boton.disabled = true;
+        boton.innerText = "Bloqueado";
+    }
+
+    boton.addEventListener("click", function(){
+        card.classList.toggle("activa");
+
+        if(card.classList.contains("activa")){
+            boton.innerText="Cerrar";
+        }else{
+            boton.innerText="Abrir";
+        }
+    });
+});
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
